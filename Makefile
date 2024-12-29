@@ -11,3 +11,5 @@ DOCKER_COMMAND := docker-compose -p $(DOCKER_PROJECT_NAME) -f $(DOCKER_COMPOSE_F
 
 shell:
 	$(DOCKER_COMMAND) run --rm app /bin/sh
+build:
+	$(DOCKER_COMMAND) build
